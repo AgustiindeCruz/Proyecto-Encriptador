@@ -1,0 +1,156 @@
+html,body{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #66FF99;
+}
+
+main{
+	position: relative;
+	display: flex;
+}
+
+.logo{
+	margin-top: 40px;
+}
+
+.area-texto{
+	border: none;
+	background-color: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	top: 40px;
+	left: 50px;
+	min-width: 800px;
+	min-height: 700px;
+	max-width: 800px;
+	max-height: 700px;
+	padding: 50px;
+	border-radius: 32px;
+	color: #4B4B4B;
+	font-size: 40px;
+	font-family: 'Cabin', sans-serif;
+}
+
+.area-texto::placeholder{
+	position: absolute;
+	font-size: 40px;
+	width: 577px;
+	height: 50px;
+	left: 200px;
+	top: 200px;
+	color: #4B4B4B;
+}
+
+.advertencia{
+	position: absolute;
+	left: 170px;
+	top: 810px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+	color: #495057;
+	opacity: 0.5;
+	font-family: 'Cabin', sans-serif;
+}
+
+.botones{
+	position: absolute;
+	top: 885px;
+	left: 160px;
+}
+
+.b-encriptar{
+	height: 67px;
+	width: 328px;
+	border-radius: 24px;
+	border: 3px solid ;
+	padding: 24px;
+	margin-right: 20px;
+	background-color: #00CC66;
+	color: white;
+	font-size: 20px;
+	font-family: 'Cabin', sans-serif;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.b-desencriptar{
+	height: 67px;
+	width: 328px;
+	border-radius: 24px;
+	border: 3px solid #00CC66;
+	padding: 24px;
+	color: #00CC66;
+	background-color: white;
+	font-size: 20px;
+	font-family: 'Cabin', sans-serif;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
+}
+
+.mensaje{
+	background:url(imagenes/muñeco.png);
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: 300px;
+	background-position: 80px 230px;
+	min-width: 400px;
+	min-height: 944px;
+	max-width: 400px;
+	max-height: 944px;
+	border: none;
+	border-radius: 32px;
+	padding: 30px;
+	position: absolute;
+	top: 40px;
+	left: 1000px;
+	color: #4B4B4B;
+	font-size: 35px;
+	font-family: 'Cabin', sans-serif;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+#texto-informativo{
+	display: inline;
+}
+
+.texto-informativo-1{
+	position: absolute;
+	left: 1066px;
+	top: 700px;
+	color: #495057;
+	font-size: 24px;
+	font-family: 'Cabin', sans-serif;
+	z-index: 1;
+}
+
+.texto-informativo-2{
+	position: absolute;
+	left: 1114px;
+	top: 740px;
+	color: #495057;
+	opacity: 0.7;
+	font-size: 20px;
+	font-family: 'Cabin', sans-serif;
+	text-align: center;
+	z-index: 1;
+}
+
+.b-copiar{
+	height: 67px;
+	width: 328px;
+	border-radius: 24px;
+	border: 3px solid #00CC66;
+	color: #00CC66;
+	padding: 24px;
+	position: absolute;
+	top: 885px;
+	left: 1066px;
+	background-color: rgba(50, 250, 50, 0.1);
+	font-size: 20px;
+	font-family: 'Cabin', sans-serif;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+#b-copiar{
+	display: none;
+}
