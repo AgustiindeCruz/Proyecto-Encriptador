@@ -1,5 +1,6 @@
-const textoIngresado = document.querySelector(".area-texto");
-const mensaje = document.querySelector(".mensaje");
+const textoIngresado = document.querySelector(".encriptador__area-texto");
+const mensaje = document.querySelector(".mostrador__mensaje");
+const mediaQueryTablet = matchMedia("(max-width:768px)");
 
 function botonEncriptar(){
 	const textoEncriptado = encriptar(textoIngresado.value);
@@ -27,7 +28,7 @@ function botonDesencriptar(){
 	textoIngresado.value = "";
 	mensaje.style.backgroundImage = "none";
 	mostrarBoton();
-	cultarTexto()
+	cultarTexto();
 }
 
 function desencriptar(stringDesencriptada){
@@ -45,7 +46,9 @@ function botonCopiar(){
 	mensaje.select();
 	navigator.clipboard.writeText(mensaje.value);
 	mensaje.value = "";
-	mensaje.style.backgroundImage = "url(imagenes/muñeco.png)";
+	if (!mediaQueryTablet.matches) {
+		mensaje.style.backgroundImage = "url(imagenes/muñeco.png)";
+	}
 	ocultarBoton();
 	mostrarTexto();
 }
@@ -65,3 +68,6 @@ function mostrarTexto(){
 function cultarTexto(){
 	document.getElementById("texto-informativo").style.display = "none";
 }
+
+
+
